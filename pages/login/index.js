@@ -1,8 +1,8 @@
 import React from 'react';
 import { 
   KeyboardView,
-  Title,
   Container, 
+  Title,
   Input, 
   ButtonSubmit,
   TextSubmit, 
@@ -14,19 +14,22 @@ function Login(){
   return(
     <KeyboardView>
       <Header/>
-        <Container>
-          <Title>Login</Title>
-          <Input
-            placeholder="E-mail"
-          />
-          <Input
-            placeholder="Senha"
-          />
-          <ButtonSubmit>
-            <TextSubmit>Entrar</TextSubmit>
-          </ButtonSubmit>
-        </Container>
-    </KeyboardView>
+      <Container>
+        <Title>Login</Title>
+        <Input 
+        placeholderTextColor="#fff" 
+        placeholder="E-mail"
+        />
+        <Input 
+        placeholderTextColor="#fff" 
+        placeholder="Senha" 
+        secureTextEntry={true}
+        />
+        <ButtonSubmit>
+          <TextSubmit>Entrar</TextSubmit>
+        </ButtonSubmit>
+      </Container>
+   </KeyboardView>
   )
 }
 export default Login;
